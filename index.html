@@ -22,7 +22,7 @@
 
   body {
     min-height: 100vh;
-    padding: 4px 7px 40px;
+    padding: 4px 4px 40px;
     font-family: Georgia, 'Times New Roman', serif;
   }
 
@@ -39,37 +39,9 @@
     height: auto;
   }
 
-  .discord-button {
-    display: inline-block;
-    margin: 8px 8px 0 0;
-    padding: 9px 16px;
-    border: 1px solid #003c74;
-    border-radius: 5px;
-    background: linear-gradient(180deg, #a6d9ff 0%, #62b5f5 12%, #1683e6 50%, #0860c6 100%);
-    box-shadow: inset 1px 1px 0 #e7f7ff, inset -1px -1px 0 #2672bd, 1px 2px 3px rgba(0,0,0,0.35);
-    color: #ffffff;
-    font-family: Tahoma, Arial, sans-serif;
-    font-size: 15px;
-    font-weight: 700;
-    text-shadow: 0 1px 1px #174779;
-    text-decoration: none;
-    white-space: nowrap;
-  }
-
-  .discord-button:hover,
-  .discord-button:focus-visible {
-    background: linear-gradient(180deg, #c0e8ff 0%, #83ccff 12%, #3299f0 50%, #1472d4 100%);
-  }
-
-  .discord-button:active {
-    background: linear-gradient(180deg, #075ab5 0%, #1683e6 100%);
-    box-shadow: inset 1px 1px 3px rgba(0,0,0,0.35);
-    transform: translateY(1px);
-  }
-
   main {
-    width: min(320px, calc(100% - 32px));
-    margin: 57px auto 0;
+    width: min(320px, 100%);
+    margin: 57px 0 0;
   }
 
   .message {
@@ -78,17 +50,37 @@
     line-height: 1.22;
   }
 
+  .discord-button {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 7px 18px;
+    border: 2px outset #dfdfdf;
+    border-radius: 0;
+    background: #c0c0c0;
+    box-shadow: 1px 1px 0 #000000;
+    color: #000000;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  .discord-button:hover {
+    background: #d4d0c8;
+  }
+
+  .discord-button:focus-visible {
+    outline: 1px dotted #000000;
+    outline-offset: -5px;
+  }
+
+  .discord-button:active {
+    border-style: inset;
+    box-shadow: inset 1px 1px 0 #808080;
+  }
+
   @media (max-width: 420px) {
-    .page-header {
-      align-items: center;
-    }
-
-    .discord-button {
-      margin-right: 0;
-      padding: 8px 10px;
-      font-size: 13px;
-    }
-
     main {
       margin-top: 54px;
     }
@@ -98,11 +90,11 @@
 <body>
   <header class="page-header">
     <img class="logo" src="Phasebook2.png" alt="phasebook">
-    <a class="discord-button" href="https://discord.gg/JMv22evyKM" target="_blank" rel="noopener noreferrer">Join Discord</a>
   </header>
 
   <main>
     <p class="message">aha, well well well,<br>looks like ur not<br>patient</p>
+    <a class="discord-button" href="https://discord.gg/JMv22evyKM" target="_blank" rel="noopener noreferrer">Join Discord</a>
   </main>
 </body>
 </html>
