@@ -44,26 +44,34 @@
   .discord-button {
     display: inline-block;
     margin: 8px 8px 0 0;
-    padding: 10px 16px;
-    border: 2px solid var(--fg);
-    border-radius: 4px;
-    color: var(--fg);
-    font-family: Arial, sans-serif;
+    padding: 9px 16px;
+    border: 1px solid #003c74;
+    border-radius: 5px;
+    background: linear-gradient(180deg, #a6d9ff 0%, #62b5f5 12%, #1683e6 50%, #0860c6 100%);
+    box-shadow: inset 1px 1px 0 #e7f7ff, inset -1px -1px 0 #2672bd, 1px 2px 3px rgb(0 0 0 / 35%);
+    color: #ffffff;
+    font-family: Tahoma, Arial, sans-serif;
     font-size: 15px;
     font-weight: 700;
+    text-shadow: 0 1px 1px #174779;
     text-decoration: none;
     white-space: nowrap;
   }
 
   .discord-button:hover,
   .discord-button:focus-visible {
-    background: var(--fg);
-    color: var(--bg);
+    background: linear-gradient(180deg, #c0e8ff 0%, #83ccff 12%, #3299f0 50%, #1472d4 100%);
+  }
+
+  .discord-button:active {
+    background: linear-gradient(180deg, #075ab5 0%, #1683e6 100%);
+    box-shadow: inset 1px 1px 3px rgb(0 0 0 / 35%);
+    transform: translateY(1px);
   }
 
   main {
     width: min(320px, calc(100% - 32px));
-    margin: 45px auto 0;
+    margin: 57px auto 0;
   }
 
   .message {
@@ -84,7 +92,7 @@
     }
 
     main {
-      margin-top: 42px;
+      margin-top: 54px;
     }
   }
 </style>
