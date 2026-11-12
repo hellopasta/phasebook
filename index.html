@@ -11,9 +11,7 @@
     --fg: #ffffff;
   }
 
-  * {
-    box-sizing: border-box;
-  }
+  * { box-sizing: border-box; }
 
   html, body {
     margin: 0;
@@ -48,7 +46,7 @@
     border: 1px solid #003c74;
     border-radius: 5px;
     background: linear-gradient(180deg, #a6d9ff 0%, #62b5f5 12%, #1683e6 50%, #0860c6 100%);
-    box-shadow: inset 1px 1px 0 #e7f7ff, inset -1px -1px 0 #2672bd, 1px 2px 3px rgb(0 0 0 / 35%);
+    box-shadow: inset 1px 1px 0 #e7f7ff, inset -1px -1px 0 #2672bd, 1px 2px 3px rgba(0,0,0,0.35);
     color: #ffffff;
     font-family: Tahoma, Arial, sans-serif;
     font-size: 15px;
@@ -65,7 +63,7 @@
 
   .discord-button:active {
     background: linear-gradient(180deg, #075ab5 0%, #1683e6 100%);
-    box-shadow: inset 1px 1px 3px rgb(0 0 0 / 35%);
+    box-shadow: inset 1px 1px 3px rgba(0,0,0,0.35);
     transform: translateY(1px);
   }
 
@@ -102,6 +100,7 @@
     <img class="logo" src="Phasebook2.png" alt="phasebook">
     <a class="discord-button" href="https://discord.gg/JMv22evyKM" target="_blank" rel="noopener noreferrer">Join Discord</a>
   </header>
+
   <main>
     <p class="message">aha, well well well,<br>looks like ur not<br>patient</p>
   </main>
